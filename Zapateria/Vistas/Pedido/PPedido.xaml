@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:xf="clr-namespace:BottomBar.XamarinForms"
+                  xmlns:local="clr-namespace:Zapateria.Vistas.Pedido"
+                  mc:Ignorable="d"
+                  x:Class="Zapateria.Vistas.Pedido.PPedido"
+                  Title="Gestion de Pedidos">
+
+    <local:RegistroPedido Title="Registro" IconImageSource="lapiz"></local:RegistroPedido>
+    <local:ConsultaPedido Title="Consulta" IconImageSource="buscar"></local:ConsultaPedido>
+    <local:ListaPedido Title="Listado" IconImageSource="lista"></local:ListaPedido>
+
+</xf:BottomBarPage>

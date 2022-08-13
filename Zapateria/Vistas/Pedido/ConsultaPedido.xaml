@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zapateria.Vistas.Pedido.ConsultaPedido">
+    <FlexLayout Direction="Column" AlignContent="Stretch">
+        <Label Text="Busqueda de Pedido" FontSize="Title" FlexLayout.AlignSelf="Center"></Label>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="5" Color="#D0D0D0"/>
+        <Entry x:Name="txtNombreCliente" Placeholder="Ingresar Nombre del cliente" FontSize="Medium"></Entry>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="Transparent"/>
+        <Button x:Name="btnBuscar" Text="Buscar Pedido"
+                     FlexLayout.AlignSelf="Center" HorizontalOptions="Center"
+                    CornerRadius="20" BorderColor="Black" BackgroundColor="#58D3F7"
+                    FontAttributes="Bold" Visual="Material"></Button>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="Transparent"/>
+    </FlexLayout>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zapateria.Vistas.Proveedor.RegistroProv">
+    <ContentPage.Content>
+        <ScrollView>
+            <FlexLayout Direction="Column" AlignContent="Stretch" FlexLayout.Grow="1" Visual="Material">
+                <Label Text="Registro de Proveedor" FontSize="Title" FlexLayout.AlignSelf="Center"></Label>
+                <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="5" Color="#D0D0D0"/>
+                <Label Text="Nombre:" FontSize="Medium"></Label>
+                <Entry Placeholder="Ejemplo: Sport Fit"
+                   x:Name="txtNombre" Keyboard="Text"></Entry>
+                <Label Text="Descripción:" FontSize="Medium"></Label>
+                <Entry Placeholder="Ejemplo: proveedor de calzado deportivo"
+                   x:Name="txtDescripcion"></Entry>
+                <Label Text="Dirección:" FontSize="Medium"></Label>
+                <Entry Placeholder="Ejemplo: Av. Nacional San Pedro S/N"
+                   x:Name="txtDireccion"></Entry>
+                <Label Text="Teléfono:" FontSize="Medium"></Label>
+                <Entry Placeholder="Ejemplo: 5512345678"
+                   x:Name="txtTelefono" Keyboard="Telephone"></Entry>
+                <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="20" Color="Transparent"/>
+                <Button Text="Guardar" x:Name="btnGuardar" HorizontalOptions="Center" 
+                        FlexLayout.AlignSelf="Center" WidthRequest="110"
+                        CornerRadius="20" BorderColor="Black" BackgroundColor="#58D3F7" FontAttributes="Bold"></Button>
+                <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="Transparent"/>
+            </FlexLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

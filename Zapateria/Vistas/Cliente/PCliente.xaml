@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:xf="clr-namespace:BottomBar.XamarinForms"
+                  xmlns:local="clr-namespace:Zapateria.Vistas.Cliente"
+                  mc:Ignorable="d"
+                  x:Class="Zapateria.Vistas.Cliente.PCliente"
+                  Title="Gestion de Clientes">
+
+    <local:RegistroCliente Title="Registro" IconImageSource="lapiz"></local:RegistroCliente>
+
+    <local:ConsultaCliente Title="Consulta" IconImageSource="buscar"></local:ConsultaCliente>
+
+    <local:ListadoCliente Title="Listado" IconImageSource="lista"></local:ListadoCliente>
+
+</xf:BottomBarPage>

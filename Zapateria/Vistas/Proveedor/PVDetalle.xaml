@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zapateria.Vistas.Proveedor.PVDetalle"
+             Title="Datos del Proveedor">
+    <FlexLayout Direction="Column" AlignContent="Stretch" Visual="Material" FlexLayout.Grow="1">
+        <Label Text="Información:" FlexLayout.AlignSelf="Center" Visual="Material" FontSize="Title"></Label>
+        <Label x:Name="lblMensaje" FlexLayout.AlignSelf="Center" IsVisible="False"></Label>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="10" Color="Transparent"/>
+        <Entry x:Name="txtNombre" Placeholder="Nombre" Visual="Material"></Entry>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="10" Color="Transparent"/>
+        <Entry x:Name="txtDescripcion" Placeholder="Descripción" Visual="Material"></Entry>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="10" Color="Transparent"/>
+        <Entry x:Name="txtDireccion" Placeholder="Dirección" Visual="Material"></Entry>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="10" Color="Transparent"/>
+        <Entry x:Name="txtTelefono" Placeholder="Teléfono" Visual="Material" Keyboard="Telephone"></Entry>
+        <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="Transparent"/>
+        <StackLayout Orientation="Horizontal" FlexLayout.AlignSelf="Center">
+            <Button x:Name="btnActualizar" Text="Actualizar" Visual="Material" WidthRequest="130" FontSize="Small"
+                CornerRadius="20" BorderColor="Black" BackgroundColor="#58D3F7" FontAttributes="Bold"></Button>
+            <Button x:Name="btnEliminar" Text="Eliminar" Visual="Material" WidthRequest="110" FontSize="Small"
+                CornerRadius="20" BorderColor="Black" BackgroundColor="#58D3F7" FontAttributes="Bold"></Button>
+        </StackLayout>
+    </FlexLayout>
+</ContentPage>

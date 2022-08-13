@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms"
+             xmlns:local="clr-namespace:Zapateria.Vistas.Proveedor"
+             x:Class="Zapateria.Vistas.Proveedor.PProveedor"
+             Title="Gestion de Proveedores">
+
+    <local:RegistroProv Title="Registro" IconImageSource="lapiz"></local:RegistroProv>
+
+    <local:ConsultaProv Title="Consulta" IconImageSource="buscar"></local:ConsultaProv>
+
+    <local:ListaProv Title="Listado" IconImageSource="lista"></local:ListaProv>
+
+</xf:BottomBarPage>

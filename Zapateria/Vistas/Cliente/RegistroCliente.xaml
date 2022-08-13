@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zapateria.Vistas.Cliente.RegistroCliente">
+    <ScrollView>
+        <FlexLayout Direction="Column" AlignContent="Stretch" FlexLayout.Grow="1" Visual="Material">
+            <Label Text="Registro de Cliente" FontSize="Title" FlexLayout.AlignSelf="Center"></Label>
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="5" Color="#D0D0D0"/>
+            <Label Text="Nombre(s):" FontSize="Medium"></Label>
+            <Entry Placeholder="Ejemplo: Gerne"
+                   x:Name="txtNombre" Keyboard="Text" ></Entry>
+            <Label Text="Apellidos:" FontSize="Medium"></Label>
+            <Entry Placeholder="Ejemplo: Gever Loew"
+                   x:Name="txtApellidos"></Entry>
+            <Label Text="Dirección:" FontSize="Medium"></Label>
+            <Entry Placeholder="Ejemplo: Franc 32 Manzana 10"
+                   x:Name="txtDireccion" Keyboard="Text"></Entry>
+            <Label Text="Correo Electrónico:" FontSize="Medium"></Label>
+            <Entry Placeholder="Ejemplo: correo@gmail.com"
+                   x:Name="txtCorreo" Keyboard="Email"></Entry>
+            <Label Text="Teléfono:" FontSize="Medium"></Label>
+            <Entry Placeholder="Ejemplo: 5512345678"
+                   x:Name="txtTelefono" Keyboard="Telephone"></Entry>
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="20" Color="Transparent"/>
+            <Button Text="Guardar" x:Name="btnGuardar" HorizontalOptions="Center" 
+                        FlexLayout.AlignSelf="Center" WidthRequest="110"
+                        CornerRadius="20" BorderColor="Black" BackgroundColor="#58D3F7" FontAttributes="Bold"></Button>
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" Color="Transparent"/>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

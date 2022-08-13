@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zapateria.Vistas.master"
+             Title="Master">
+    <ScrollView>
+    <FlexLayout Direction="Column" AlignContent="Stretch" BackgroundColor="#D8D8D8">
+        <Label Text='"Alinne"'  FontFamily="{StaticResource alinne}" FontSize="70" FlexLayout.AlignSelf="Center" HeightRequest="55"></Label>
+        <Image Source="calzados"></Image>
+        <StackLayout>
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="4" Color="#D0D0D0"/>
+        </StackLayout>
+        <Button Text="Proveedores" ContentLayout="Left,5" 
+                Image="productos"
+                HorizontalOptions="Start"
+                BackgroundColor="#D8D8D8"
+                x:Name="btnProveedor"
+                Clicked="btnProveedor_Clicked"/>
+        <Button Text="Pedidos" ContentLayout="Left,5" 
+                Image="enviado"
+                HorizontalOptions="Start"
+                BackgroundColor="#D8D8D8"
+                x:Name="btnPedido"
+                Clicked="btnPedido_Clicked"/>
+        <Button Text="Clientes" ContentLayout="Left,5" 
+                Image="equipo"
+                HorizontalOptions="Start"
+                BackgroundColor="#D8D8D8"
+                x:Name="btnCliente"
+                Clicked="btnCliente_Clicked"/>
+        <StackLayout>
+            <BoxView HorizontalOptions="FillAndExpand" WidthRequest="1" HeightRequest="4" Color="#D0D0D0"/>
+        </StackLayout>
+    </FlexLayout>
+    </ScrollView>
+
+</ContentPage>
